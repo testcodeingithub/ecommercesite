@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}login{% endblock title %}
+{% block content %}
+<section>
+    <div class ="imgbox">
+    <img src = "{% static 'app/images/back3.jpg'%}">
+    </div>
+    <div class ="contentbox">
+        <div class = "formbox">
+            <h2>Login</h2>
+            <form>
+                <div class = "inputbx">
+                    <span>Username</span>
+                    <input type ="text" name="user">
+                </div>
+                <div class = "inputbx">
+                    <span>Password</span>
+                    <input type ="text" name="pswrd">
+                </div>
+                <div class = "remember">
+                    <label><input type ="checkbox" name="user">Remember me</label>
+                </div>
+                <div class = "submit">
+                    <input type ="submit"  value ="Sign in"name="sbmt">
+                </div>
+                <div class = "inputbx">
+                    <br>
+                    <p>Don't have an account? <a href ="#">Sign up</a></p>
+                </div>
+            </form>
+            <h3>Login with social media</h3>
+            <a href="#"> <i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"> <i class="fab fa-instagram"> </i></a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

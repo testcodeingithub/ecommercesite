@@ -1,0 +1,88 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}contact us{% endblock title %}
+
+
+{% block content %}
+<div class="contactus">
+     
+    <h2>Get in Touch</h2>
+   
+  <div class ="box">
+<!--form-->
+      <div class ="contact form">
+        <h3>Send a Message</h3>
+        <form>
+              <div class = "formbox">
+                  <div class = "row50">
+                      <div class = "inputbox">
+                        <span>First Name</span>
+                        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                      </div>
+                      <div class = "inputbox">
+                         <span>Last Name</span>
+                         <input type="text" id="fname" name="firstname" placeholder=" Your Last name..">
+                      </div>
+                  </div>
+
+                  <div class = "row50">
+                      <div class = "inputbox">
+                        <span>Email</span>
+                        <input type="text" id="fname" name="firstname" placeholder="Your email..">
+                      </div>
+                      <div class = "inputbox">
+                         <span>Mobile</span>
+                         <input type="text" id="fname" name="firstname" placeholder="Your Mobile..">
+                      </div>
+                  </div>
+                  
+
+                  <div class = "row100">
+                      <div class = "inputbox">
+                        <span>Message</span>
+                        <textarea placeholder="Write your message here..."></textarea>
+                      </div>
+                      <div class = "inputbox">
+                         
+                         <input type="submit" value="Send">
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+
+      <div class ="contact info">
+        <h3>Contact Info</h3>
+          <div class = "infobox">
+             <div>
+               <span><i class="fas fa-map-marker-alt"></i></span>
+                <p>Palazhi,Calicut <br> India</p>
+              </div>
+              <div>
+                <span><i class="fas fa-envelope"></i></span>
+                 <a href="#">modelzocalicut@gmail.com</a>
+               </div>
+               <div>
+                <span><i class="fas fa-mobile"></i></span>
+                 <a href="#">+91 1235467895</a>
+               </div>
+               <br>
+               <ul>
+                <a href="#"> <i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i></a> 
+               </ul>
+
+
+          </div>
+      </div>
+      <div class =" map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15652.826190631018!2d75.83271921657169!3d11.246210867832994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65b981cdaa65d%
+        3A0x8f28b9b91005ce47!2sPalazhi%2C%20Pantheeramkavu%2C%20Kerala%20673008!
+        5e0!3m2!1sen!2sin!4v1635793111839!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+      </div>
+  </div>
+</div>
+{%endblock content%}    
